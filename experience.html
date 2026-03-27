@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayden Andrews</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Jost:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="site-nav">
+        <a class="site-nav__brand" href="#">Jayden Andrews</a>
+        <button class="nav-toggle" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="site-nav__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="experience.html" class="active">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+        </ul>
+    </nav>
+
+    <!-- Work Experience -->
+    <section class="about-section">
+        <h2 class="section-label">Work Experience</h2>
+        <div class="divider"></div>
+
+        <div class="edu-list">
+
+            <!-- Music & Arts -->
+            <div class="list-item">
+                <div class="logo">
+                    <img src="images/music and arts logo.jpeg" alt="Music & Arts Logo">
+                </div>
+                <div class="edu-details">
+                    <h3>Music & Arts</h3>
+                    <p class="edu-degree">Senior Sales Associate | August 2025 – Present</p>
+                    <ul>
+                        <li>Strengthened customer relationships, boosting sales by 20% through tailored product
+                            recommendations and lesson program promotions.</li>
+                        <li>Supported daily operations involving POS systems, inventory software, and internal tools,
+                            escalating technical issues as needed.</li>
+                        <li>Maintained store operations including merchandising, security, and maintenance to ensure a
+                            smooth and welcoming retail environment.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- U.S. Food and Drug Administration -->
+            <div class="list-item">
+                <div class="logo">
+                    <img src="images/Food_and_Drug_Administration_201x_logo.svg.png" alt="FDA Logo">
+                </div>
+                <div class="edu-details">
+                    <h3>U.S. Food and Drug Administration</h3>
+                    <p class="edu-degree">Oak Ridge Institute for Science and Education Fellow | June 2023 – August 2023
+                    </p>
+                    <ul>
+                        <li>Automated administrative and consultation review processes, creating data visualizations to
+                            track progress with 100% success in timely task completion.</li>
+                        <li>Processed and structured data with Pandas and integrated it into Power BI to improve report
+                            clarity and accessibility.</li>
+                        <li>Optimized data mining programs to streamline divisional reports, reducing manual report
+                            preparation time by ~20%.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</html>

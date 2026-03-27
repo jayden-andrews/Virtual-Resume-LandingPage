@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayden Andrews</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Jost:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="site-nav">
+        <a class="site-nav__brand" href="#">Jayden Andrews</a>
+        <button class="nav-toggle" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="site-nav__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html" class="active">Skills</a></li>
+        </ul>
+    </nav>
+
+<!-- Technical Skills -->
+<section class="about-section">
+    <h2 class="section-label">Technical Skills</h2>
+    <div class="divider"></div>
+
+    <div class="skills-container">
+        <!-- Programming Languages -->
+        <div class="skill-box">
+            <h3>Programming Languages</h3>
+            <p>Python, Java, JavaScript, C++, Kotlin, HTML/CSS, SQL</p>
+        </div>
+
+        <!-- Tools & Frameworks -->
+        <div class="skill-box">
+            <h3>Tools & Frameworks</h3>
+            <p>React, Node.js, Pandas, Matplotlib, BeautifulSoup, Power BI, ArcGIS, Microsoft Office</p>
+        </div>
+
+        <!-- Certifications -->
+        <div class="skill-box">
+            <h3>Certifications</h3>
+            <p>Java Foundations (Oracle), CSM (Scrum Alliance), Responsive Web Design (freeCodeCamp)</p>
+        </div>
+    </div>
+</section>
+</body>
+
+</html>
