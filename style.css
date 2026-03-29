@@ -1,17 +1,16 @@
-/* --- Google Fonts --- */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap');
 
-/* --- Color tokens --- */
+/* Color tokens */
 :root {
-    --color-cream: #FAF7F2;
+    --color-cream:      #FAF7F2;
     --color-cream-dark: #EDE7DA;
-    --color-tan: #C4A882;
-    --color-brown: #7A5535;
-    --color-espresso: #3B2A1A;
-    --color-black: #1A1208;
+    --color-tan:        #C4A882;
+    --color-brown:      #7A5535;
+    --color-espresso:   #3B2A1A;
+    --color-black:      #1A1208;
 }
 
-/* --- Base / Typography --- */
+/* Base */
 body {
     margin: 0;
     background-color: var(--color-cream);
@@ -26,9 +25,7 @@ body {
     overflow: hidden;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-family: 'Cormorant Garamond', serif;
     color: var(--color-black);
     font-weight: 500;
@@ -44,7 +41,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* --- Navbar --- */
+/* Navbar */
 .site-nav {
     position: sticky;
     top: 0;
@@ -134,7 +131,7 @@ a:hover {
     border-radius: 2px;
 }
 
-/* --- Page Layout --- */
+/* About page layout */
 .about-page {
     display: flex;
     flex-direction: column;
@@ -144,11 +141,20 @@ a:hover {
     padding: 4rem 2.5rem 6rem;
 }
 
-/* --- Section / About Me --- */
 .about-section {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+}
+
+/* Page header used on experience, projects, skills */
+.page-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-bottom: 2rem;
 }
 
 .section-label {
@@ -164,18 +170,9 @@ a:hover {
     height: 1.5px;
     background: var(--color-brown);
     border-radius: 2px;
-
 }
 
-.page-header {
-  margin-top: 25px;
-  margin-left: 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  margin-bottom: 2rem;
-}
-
+/* About body text */
 .about-body {
     display: flex;
     flex-direction: column;
@@ -189,7 +186,7 @@ a:hover {
     line-height: 1.85;
 }
 
-/* --- Education List --- */
+/* Education and experience list cards */
 .edu-list {
     display: flex;
     flex-direction: column;
@@ -197,56 +194,57 @@ a:hover {
     margin-top: 25px;
 }
 
+/* Full-width card used on about page */
 .edu-item {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1.5rem;
     background: var(--color-cream-dark);
-    border: 1px solid var(--color-tan);
+    border: 2px solid #e8d5b7;
     border-radius: 12px;
     padding: 1.25rem 1.5rem;
-    border: 2px solid #e8d5b7;
     flex: 1;
     box-shadow: 0 6px 30px rgba(122, 82, 48, 0.12);
 }
 
+/* Constrained card used on experience and projects pages */
 .list-item {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1.5rem;
     background: var(--color-cream-dark);
-    border: 1px solid var(--color-tan);
+    border: 2px solid #e8d5b7;
     border-radius: 12px;
     padding: 1.25rem 1.5rem;
-    border: 2px solid #e8d5b7;
     max-width: 1000px;
     margin-left: 250px;
     box-shadow: 0 6px 30px rgba(122, 82, 48, 0.12);
 }
 
+/* Logo box shared by edu-item and list-item */
 .logo {
-  flex-shrink: 0;
-  width: 64px;
-  height: 64px;
-  border-radius: 8px;
-  background: var(--color-cream);
-  border: 1px solid var(--color-tan);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    background: var(--color-cream);
+    border: 1px solid var(--color-tan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .logo.umd img {
-  transform: scale(1);
+    transform: scale(1);
 }
 
 .edu-details {
@@ -269,27 +267,20 @@ a:hover {
     letter-spacing: 0.02em;
 }
 
-/* --- Info / Profile Section --- */
+/* Row used to align a title and github icon side by side */
+.card-details {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+}
+
+/* Home page hero */
 #index-info {
     min-height: calc(100vh - 60px);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 3rem 2.5rem;
-}
-
-#skills-info {
-    min-height: calc(100vh - 60px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 3rem 2.5rem;
-}
-
-.card-details {
-    display: flex;
-    flex-direction: row;
-    gap: 1.25rem;
 }
 
 .container {
@@ -303,16 +294,6 @@ a:hover {
     margin-top: 125px;
 }
 
-.card-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 4rem;
-    max-width: 900px;
-    width: 100%;
-    margin-bottom: 250px;
-}
-
 .profile-image {
     width: 500px;
     height: 500px;
@@ -324,61 +305,44 @@ a:hover {
     box-shadow: 0 6px 30px rgba(122, 82, 48, 0.12);
 }
 
+/* Info card beside the profile photo */
 .card {
-        display: flex;
-        flex-direction: column;
-        background-color: var(--color-cream-dark);
-        border: 2px solid #e8d5b7;
-        border-radius: 16px;
-        padding: 40px 32px 36px;
-        flex: 1;
-        max-width: 320px;
-        box-shadow: 0 6px 30px rgba(122, 82, 48, 0.12);
-        position: relative;
-    }
-
-    /* --- Social Icons Small --- */
-.social-container {
     display: flex;
-    gap: 1rem; /* smaller spacing */
-    justify-content: center;
-    margin-top: 2rem;
+    flex-direction: column;
+    background-color: var(--color-cream-dark);
+    border: 2px solid #e8d5b7;
+    border-radius: 16px;
+    padding: 40px 32px 36px;
+    flex: 1;
+    max-width: 320px;
+    box-shadow: 0 6px 30px rgba(122, 82, 48, 0.12);
+    position: relative;
 }
 
-.social-link {
+/* Skills page */
+#skills-info {
+    min-height: calc(100vh - 60px);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;       /* smaller box */
-    height: 30px;      /* smaller box */
-    background-color: var(--color-cream-dark);
-    border: 2px solid var(--color-tan);
-    border-radius: 8px; /* smaller radius for proportion */
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(122, 82, 48, 0.12);
+    padding: 3rem 2.5rem;
 }
 
-.social-link svg {
-    width: 16px;       /* smaller icon */
-    height: 16px;      /* smaller icon */
-    fill: var(--color-espresso);
-    transition: fill 0.3s ease;
+.card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+    max-width: 900px;
+    width: 100%;
+    margin-bottom: 250px;
 }
 
-.social-link:hover {
-    background-color: var(--color-brown);
-    border-color: var(--color-brown);
-}
-
-.social-link:hover svg {
-    fill: var(--color-cream);
-}
-
-  /* --- Social Icons --- */
+/* Social icon buttons */
 .social-container {
     display: flex;
     gap: 2rem;
-    justify-content: center; /* center horizontally */
+    justify-content: center;
     margin-top: 3rem;
 }
 
@@ -411,136 +375,15 @@ a:hover {
     fill: var(--color-cream);
 }
 
-.social-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 12px;
-  border: 1px solid var(--color-tan);
-  background: var(--color-cream-dark);
-  color: var(--color-espresso);
-  text-decoration: none;
-  transition: border-color 0.15s, color 0.15s, background 0.15s;
-}
-
-.social-btn:hover {
-  border-color: var(--color-brown);
-  color: var(--color-brown);
-  background: var(--color-cream);
-  text-decoration: none;
-}
-
+/* Smaller github icon on project cards */
 .project-link {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
-  margin-bottom: 0.5rem;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
 }
 
 .project-link svg {
-  width: 16px;
-  height: 16px;
-}
-
-/* --- Mobile --- */
-@media (max-width: 640px) {
-    .nav-toggle {
-        display: flex;
-    }
-
-    .site-nav__links {
-        display: none;
-        flex-direction: column;
-        align-items: flex-start;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        right: 0;
-        background: var(--color-cream-dark);
-        border-bottom: 1px solid var(--color-tan);
-        padding: 0.5rem 1rem 1rem;
-    }
-
-    .site-nav__links.open {
-        display: flex;
-    }
-
-    .site-nav__links a {
-        padding: 0.6rem 0.5rem;
-        width: 100%;
-    }
-
-    .edu-item {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-    }
-
-    .about-page {
-        padding: 2.5rem 1.25rem 4rem;
-    }
-
-    .container {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .profile-image {
-        width: 100%;
-        height: auto;
-        border: 2px solid var(--color-brown);
-        border-radius: 32px;
-        flex: 1;
-        box-shadow: 0 6px 30px rgba(122, 82, 48, 0.12);
-    }
-
-    /* Flex container for skills */
-    .skills-container {
-        display: flex;
-        gap: 2rem;
-        flex-wrap: wrap;
-        /* allows stacking on smaller screens */
-        margin-top: 2rem;
-    }
-
-    /* Individual skill boxes */
-    .skill-box {
-        flex: 1;
-        /* equal width columns */
-        min-width: 220px;
-        /* prevents boxes from being too narrow */
-        background: var(--color-cream-dark);
-        border: 1px solid var(--color-tan);
-        border-radius: 12px;
-        padding: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        gap: 0.75rem;
-    }
-
-    .skill-box h3 {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 1.25rem;
-        font-weight: 500;
-        color: var(--color-black);
-        margin: 0;
-    }
-
-    .skill-box p {
-        font-family: 'Jost', sans-serif;
-        font-size: 0.95rem;
-        color: var(--color-espresso);
-        line-height: 1.75;
-        margin: 0;
-    }
-
-
-    /* Mobile stacking */
-    @media (max-width: 640px) {
-        .skills-container {
-            flex-direction: column;
-        }
-    }
+    width: 16px;
+    height: 16px;
 }
