@@ -387,3 +387,13 @@ a:hover {
     width: 16px;
     height: 16px;
 }
+
+/* Page fade */
+.page-content {
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

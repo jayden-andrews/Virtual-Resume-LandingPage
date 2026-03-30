@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayden Andrews</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Jost:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="site-nav">
+        <a class="site-nav__brand" href="#">Jayden Andrews</a>
+        <button class="nav-toggle" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="site-nav__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-content">
+
+        <!-- Projects -->
+        <section class="about-section">
+            <div class="page-header">
+                <h2 class="section-label">Projects</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="edu-list">
+
+                <!-- AI: Obstacle Course -->
+                <div class="list-item">
+                    <div class="edu-details">
+                        <h3>Artificial Intelligence: Obstacle Course</h3>
+                        <p class="edu-degree">March 2024</p>
+
+                        <ul>
+                            <li>Implemented a Q-Learning algorithm using the Bellman equation to optimize agent
+                                performance.
+                            </li>
+                            <li>Visualized agent behavior during training using pygame for interpretability.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pokémon Fan Club Finder -->
+                <div class="list-item">
+                    <div class="edu-details">
+                        <div class="card-details">
+                            <h3>Web Application Development: Pokémon Fan Club Finder</h3>
+                            <a href="https://github.com/Kaiewalter/CMSC335Fall2023FinalProject"
+                                class="social-link project-link" target="_blank" class=" social-link project-link"
+                                target="_blank" aria-label="GitHub Repository">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="edu-degree">December 2023</p>
+                        <ul>
+                            <li><a href="https://github.com/Kaiewalter/CMSC335Fall2023FinalProject"
+                                    target="_blank">GitHub
+                                    Repository</a></li>
+                            <li>Developed a website using JavaScript, CSS, and MongoDB to enhance user experience with
+                                dynamic features.</li>
+                            <li>Implemented algorithms to connect users based on shared preferences, achieving over 90%
+                                connection accuracy.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Gluten-Free UMD Mobile App -->
+                <div class="list-item">
+                    <div class="edu-details">
+                        <div class="card-details">
+                            <h3>Programming Handheld Systems: Gluten-Free UMD Mobile Application</h3>
+                            <a href="https://github.com/annanuran/Gluten-Free-UMD" class="social-link project-link"
+                                target="_blank" class=" social-link project-link" target="_blank"
+                                aria-label="GitHub Repository">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="edu-degree">November 2022</p>
+                        <ul>
+                            <li>Built an Android app in Kotlin for logging and rating gluten-free meals, increasing meal
+                                tracking efficiency.</li>
+                            <li>Developed a scalable solution using Android Jetpack and Google Firestore, handling 100+
+                                meal
+                                entries with 99.9% reliability.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href]').forEach(link => {
+            link.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+
+                if (!href || href.startsWith('http') || href.startsWith('#') || href.startsWith('mailto')) return;
+
+                e.preventDefault();
+                const content = document.querySelector('.page-content');
+                content.style.transition = 'opacity 0.3s ease';
+                content.style.opacity = '0';
+
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 300);
+            });
+        });
+    </script>
+</body>
+
+</html>

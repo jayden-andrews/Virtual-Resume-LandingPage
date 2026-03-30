@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayden Andrews</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Jost:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="site-nav">
+        <a class="site-nav__brand" href="#">Jayden Andrews</a>
+        <button class="nav-toggle" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="site-nav__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-content">
+        <main class="about-page">
+
+            <!-- About Me -->
+            <section class="about-section">
+                <h2 class="section-label">About Me</h2>
+                <div class="divider"></div>
+                <div class="about-body">
+                    <p>Hi! I'm passionate about software engineering and problem-solving. I love building practical
+                        tools
+                        that make everyday tasks easier and more efficient. Through my projects and hands-on experience,
+                        I've gained skills in programming, data analysis, and algorithm design, while learning to
+                        approach
+                        development with attention to detail.</p>
+                    <p>I'm motivated by the chance to create software that has a real impact. I focus on building
+                        solutions
+                        that are thoughtful, reliable, and genuinely useful in the real world. Continuing to learn and
+                        grow
+                        as an engineer is always a priority for me, and I enjoy collaborating with teams to tackle
+                        challenging problems.</p>
+                    <p>Outside of technology, I play the saxophone, sing, and stay active. These hobbies have taught me
+                        discipline, creativity, and teamwork — qualities I bring to everything I do as a software
+                        engineer.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section class="about-section">
+                <h2 class="section-label">Education</h2>
+                <div class="divider"></div>
+
+                <div class="edu-list">
+
+                    <!-- Code Differently -->
+                    <div class="edu-item">
+                        <div class="logo">
+                            <img src="images/code_differently_logo.png" alt="Code Differently logo">
+                        </div>
+                        <div class="edu-details">
+                            <h3>Code-Differently</h3>
+                            <p class="edu-degree">AI-Powered Software Engineering Bootcamp</p>
+                        </div>
+                    </div>
+
+                    <!-- UMD -->
+                    <div class="edu-item">
+                        <div class="logo umd">
+                            <img src="images/umd seal.png" alt="University of Maryland logo">
+                        </div>
+                        <div class="edu-details">
+                            <h3>University of Maryland, College Park</h3>
+                            <p class="edu-degree">Bachelor of Science, Computer Science</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Relevant Coursework -->
+            <section class="about-section">
+                <h2 class="section-label">Relevant Coursework</h2>
+                <div class="divider"></div>
+
+                <ul class="course-list">
+                    <li>Object-Oriented Programming</li>
+                    <li>Programming Languages</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Web Development</li>
+                    <li>Data Structures</li>
+                    <li>Algorithms</li>
+                    <li>Databases</li>
+                    <li>Programming Handheld Devices</li>
+                    <li>Human-Computer Interaction</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href]').forEach(link => {
+            link.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+
+                if (!href || href.startsWith('http') || href.startsWith('#') || href.startsWith('mailto')) return;
+
+                e.preventDefault();
+                const content = document.querySelector('.page-content');
+                content.style.transition = 'opacity 0.3s ease';
+                content.style.opacity = '0';
+
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 300);
+            });
+        });
+    </script>
+</body>
+
+</html>
